@@ -1,0 +1,63 @@
+/* GLOBAL STYLES */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HOME PAGE STYLES */
+
+
+#title{
+    text-align: center;
+}
+
+#title h1{
+    display: inline;
+}
+
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#buttons a {
+    text-decoration: none;
+    color: white;
+    background-color: #47ACF9;
+    width: 100px;
+    padding: 10px 0px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+#list {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* PHONE STYLES */
+@media screen and (max-width: 600px) {
+    #buttons a {
+        text-decoration: none;
+        color: white;
+        background-color: #47ACF9;
+        width: 10%;
+        padding: 10px 0px;
+        margin: 10px;
+        text-align: center;
+    }
+}
