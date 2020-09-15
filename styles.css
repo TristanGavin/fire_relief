@@ -12,6 +12,7 @@ a {
 
 
 #title{
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -31,33 +32,70 @@ a {
     text-decoration: none;
     color: white;
     background-color: #47ACF9;
-    width: 100px;
+    width: 12%;
+    min-width: 120px;
     padding: 10px 0px;
     margin: 10px;
     text-align: center;
 }
+
+/* #buttons a:hover{
+    background-color: #F2F2F2;
+    color: black;
+} */
 
 
 h2 {
     text-align: center;
 }
 
-#list {
+.resource-list {
     display: flex;
     justify-content: center;
 }
+
+/* keep hidden */
+.short-resources {display: none;}
+
 
 
 
 /* PHONE STYLES */
 @media screen and (max-width: 600px) {
-    #buttons a {
-        text-decoration: none;
-        color: white;
-        background-color: #47ACF9;
-        width: 10%;
-        padding: 10px 0px;
-        margin: 10px;
-        text-align: center;
+    #buttons{
+        flex-direction: column;
+        align-items: center;
     }
+    
+    #buttons a {
+        width: 60%;
+        min-width: 120px;
+    }
+
+    .resources {display: none;}
+
+    .short-resources {
+        margin-left: 10px;
+        display: inline-block;
+        color: black;
+        margin-bottom: 0;
+    }
+
+    .resource-list ul {padding-left: 0;list-style-type: none;}
+
+    
+    .resource-list ul li{
+        padding: 10px;
+        border: solid black;
+        border-width: 1px;
+    }
+    
+    .resource-list ul:first-child {
+        border-top: solid black;
+        border-left: solid black;
+        border-right: solid black;
+        border-width: 1px;
+    }
+
+
 }
