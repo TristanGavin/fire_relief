@@ -50,6 +50,7 @@ h2 {
     overflow: hidden;
     background-color: white;
     border-bottom: solid black;
+    border-width: 1px;
   }
 
   .topnav a {
@@ -113,9 +114,6 @@ h2 {
         margin-left: 58.66666px;
         border: none;
     }
-}
-
-
 
     #buttons{
         flex-direction: column;
@@ -149,5 +147,5 @@ h2 {
         border-width: 1px;
     }
 
-
+    /*  */
 }
