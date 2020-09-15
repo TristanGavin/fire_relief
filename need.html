@@ -1,18 +1,86 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
+  <title>Survivor</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="donatestyles.css">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <script>
+    function dropDown(c, i) {
+      var x = document.getElementById(i);
+      if (x.className === c) {
+        x.className += " responsive";
+      } else {
+        x.className = c;
+      }
+    }
+    </script>
 
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="#news">Volunteer</a>
+    <a href="donate.html">Donate</a>
+    <a href="">Espanol</a>
+    <a href="javascript:void(0);" class="icon" onclick="dropDown('topnav', 'myTopnav')">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <h2>List of Resources</h2>
+  <p>still need to figure out how to do this page. what resources are we offering here? locations of meels. making shelter arrangements happen??</p>
+  <div class="resource-test">
+    <ul>
+      <li onclick="dropDown('hidden', 'fin-aid')">Financial Relief <i class="fas fa-arrow-down"></i></li>
+      <div class="hidden" id="fin-aid">
+        <a href="#Organizations"><li>Organizations</li></a>
+        <a href="#Direct Cash Assistance"><li>Direct Cash Assistance</li></a>
+      </div>
+      <li onclick="dropDown('hidden', 'housing')">Housing</li>
+      <div class="hidden" id="housing">
+        <a href="#Organizations"><li>I Can Provide Housing</li></a>
+      </div>
+      <li onclick="dropDown('hidden', 'food')">Food</li>
+      <div class="hidden" id="food">
+        <a href="#AshlandFood"><li>Ashland</li></a>
+        <a href="#TalentFood"><li>Talent</li></a>
+        <a href="#Pheonix"><li>Pheonix</li></a>
+        <a href="#MedfordFood"><li>Medford</li></a>
+        <a href="#CPFood"><li>Central Point</li></a>
+        <a href="#PickUp"><li>Contacts for Food Pickup</li></a>
+      </div>
+<!-- 
+      <li onclick="dropDown('hidden', 'meals')">Meals</li>
+      <div class="hidden" id="meals">
+        <a href="#Organizations"><li>I Can Provide Housing</li></a>
+      </div> 
+-->
+      <li onclick="dropDown('hidden', 'supplies')">Physical Supplies</li>
+      <div class="hidden" id="supplies">
+        <a href="#AshlandFood"><li>Ashland</li></a>
+        <a href="#TalentFood"><li>Talent</li></a>
+        <a href="#Pheonix"><li>Pheonix</li></a>
+        <a href="#MedfordFood"><li>Medford</li></a>
+        <a href="#CPFood"><li>Central Point</li></a>
+        <a href="#PickUp"><li>Contacts for Supply Pickup</li></a>
+      </div>
+      <li onclick="dropDown('hidden', 'health')">Health and Wellness Services</li>
+      <div class="hidden" id="health">
+        <a href="#Organizations"><li>I Can Offer Health/Wellness Services</li></a>
+      </div>
+      <a href="#Livestock"><li>Animal/Livestock</li></a>
+    </ul>
+  </div>
+
+
 </body>
+
 </html>

@@ -1,5 +1,5 @@
-/* NAVBAR STYLES */
 
+/* NAVBAR STYLES */
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -32,6 +32,34 @@
 
 /* BODY PAGE STYLES */
 
+.resource-test ul {padding-left: 0;list-style-type: none;}
+
+.resource-test ul li{
+    padding: 10px;
+    border: solid black;
+    border-width: 1px;
+}
+
+.resource-test ul:first-child {
+    border-top: solid black;
+    border-left: solid black;
+    border-right: solid black;
+    border-width: 1px;
+}
+
+.hidden {
+    display: none;  
+    
+}
+
+.hidden.responsive {
+    display: block;
+    background-color: #47ACF9;
+}
+
+.hidden.responsive a {
+    color: white;
+}
 
 
 /* TABLET STYLES */
