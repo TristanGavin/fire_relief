@@ -12,12 +12,12 @@
   <link rel="stylesheet" href="donatestyles.css">
 
   <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
+    function dropDown(c, i) {
+      var x = document.getElementById(i);
+      if (x.className === c) {
         x.className += " responsive";
       } else {
-        x.className = "topnav";
+        x.className = c;
       }
     }
     </script>
@@ -28,33 +28,54 @@
   <div class="topnav" id="myTopnav">
     <a href="index.html" class="active">Home</a>
     <a href="#news">Volunteer</a>
-    <a href="#contact">In Need</a>
+    <a href="need.html">In Need</a>
     <a href="">Espanol</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="dropDown('topnav', 'myTopnav')">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 
-  <h1>How You Can Help</h1>
-  <h2>Donations</h2>
-  <div>
+  <h2>Make A Donation</h2>
+  <div class="resource-test">
     <ul>
-      <li>Financial Relief</li>
-      <!-- dropdown list of
-              Organizations to donate to
-              Direct Cash Assistance
-      -->
-      <li>Housing</li>
-      <!-- I can provide housing-->
-      <li>Food</li>
-      <!-- Donation Locations -->
-      <!-- Ashland, Medford,  -->
-      <li>Meals</li>
-      <!-- maybe remove this from donations page -->
-      <li>Physical Supplies</li>
-      <!-- Donation Locations -->
-      <li>Health and Wellness Services</li>
-      <!-- Offer Services (takes to page to fill out service offer-->
+      <li onclick="dropDown('hidden', 'fin-aid')">Financial Relief <i class="fas fa-arrow-down"></i></li>
+      <div class="hidden" id="fin-aid">
+        <a href="#Organizations"><li>Organizations</li></a>
+        <a href="#Direct Cash Assistance"><li>Direct Cash Assistance</li></a>
+      </div>
+      <li onclick="dropDown('hidden', 'housing')">Housing</li>
+      <div class="hidden" id="housing">
+        <a href="#Organizations"><li>I Can Provide Housing</li></a>
+      </div>
+      <li onclick="dropDown('hidden', 'food')">Food</li>
+      <div class="hidden" id="food">
+        <a href="#AshlandFood"><li>Ashland</li></a>
+        <a href="#TalentFood"><li>Talent</li></a>
+        <a href="#Pheonix"><li>Pheonix</li></a>
+        <a href="#MedfordFood"><li>Medford</li></a>
+        <a href="#CPFood"><li>Central Point</li></a>
+        <a href="#PickUp"><li>Contacts for Food Pickup</li></a>
+      </div>
+<!-- 
+      <li onclick="dropDown('hidden', 'meals')">Meals</li>
+      <div class="hidden" id="meals">
+        <a href="#Organizations"><li>I Can Provide Housing</li></a>
+      </div> 
+-->
+      <li onclick="dropDown('hidden', 'supplies')">Physical Supplies</li>
+      <div class="hidden" id="supplies">
+        <a href="#AshlandFood"><li>Ashland</li></a>
+        <a href="#TalentFood"><li>Talent</li></a>
+        <a href="#Pheonix"><li>Pheonix</li></a>
+        <a href="#MedfordFood"><li>Medford</li></a>
+        <a href="#CPFood"><li>Central Point</li></a>
+        <a href="#PickUp"><li>Contacts for Supply Pickup</li></a>
+      </div>
+      <li onclick="dropDown('hidden', 'health')">Health and Wellness Services</li>
+      <div class="hidden" id="health">
+        <a href="#Organizations"><li>I Can Offer Health/Wellness Services</li></a>
+      </div>
+      <a href="#Livestock"><li>Animal/Livestock</li></a>
     </ul>
   </div>
 
