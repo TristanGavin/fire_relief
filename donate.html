@@ -26,13 +26,14 @@
 
 <body>
   <div class="topnav" id="myTopnav">
-    <a href="index.html" class="active">Home</a>
-    <a href="#news">Volunteer</a>
-    <a href="need.html">In Need</a>
-    <a href="">Espanol</a>
     <a href="javascript:void(0);" class="icon" onclick="dropDown('topnav', 'myTopnav')">
       <i class="fa fa-bars"></i>
     </a>
+    <a href="index.html" class="active">Rogue Valley Fire Aid</a>
+    <a href="need.html">Need Help</a>
+    <a href="#news">Volunteer</a>
+    <a href="">Espanol</a>
+
   </div>
 
   <h2>Make A Donation</h2>
@@ -41,12 +42,18 @@
       <li onclick="dropDown('hidden', 'fin-aid')">Financial Relief <i class="fas fa-arrow-down"></i></li>
       <div class="hidden" id="fin-aid">
         <a href="#Organizations"><li>Organizations</li></a>
-        <a href="#Direct Cash Assistance"><li>Direct Cash Assistance</li></a>
+        <a href="#Direct Cash Assistance"><li id="no-border">Direct Cash Assistance</li></a>
       </div>
+    </ul>
+
+    <ul>
       <li onclick="dropDown('hidden', 'housing')">Housing</li>
       <div class="hidden" id="housing">
         <a href="#Organizations"><li>I Can Provide Housing</li></a>
       </div>
+    </ul>
+
+    <ul>
       <li onclick="dropDown('hidden', 'food')">Food</li>
       <div class="hidden" id="food">
         <a href="#AshlandFood"><li>Ashland</li></a>
@@ -56,12 +63,9 @@
         <a href="#CPFood"><li>Central Point</li></a>
         <a href="#PickUp"><li>Contacts for Food Pickup</li></a>
       </div>
-<!-- 
-      <li onclick="dropDown('hidden', 'meals')">Meals</li>
-      <div class="hidden" id="meals">
-        <a href="#Organizations"><li>I Can Provide Housing</li></a>
-      </div> 
--->
+    </ul>
+    
+    <ul>
       <li onclick="dropDown('hidden', 'supplies')">Physical Supplies</li>
       <div class="hidden" id="supplies">
         <a href="#AshlandFood"><li>Ashland</li></a>
@@ -71,10 +75,14 @@
         <a href="#CPFood"><li>Central Point</li></a>
         <a href="#PickUp"><li>Contacts for Supply Pickup</li></a>
       </div>
+    </ul>
+    <ul>
       <li onclick="dropDown('hidden', 'health')">Health and Wellness Services</li>
       <div class="hidden" id="health">
         <a href="#Organizations"><li>I Can Offer Health/Wellness Services</li></a>
       </div>
+    </ul>
+    <ul>
       <a href="#Livestock"><li>Animal/Livestock</li></a>
     </ul>
   </div>
