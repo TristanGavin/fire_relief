@@ -35,8 +35,8 @@
     </div>
 
     <div class="back">
-        <a href="../../need.html"><i class="fas fa-arrow-left"></i></a>        
-        <div>List of Housing</div>
+        <a href="../../need.html"><i class="fas fa-arrow-left"></i></a>
+        <div>Transportation Resources</div>
     </div>
 
     <!-- this will be templated -->
@@ -47,11 +47,8 @@
 
     <!-- HANDLE BARS SCRIPT -->
     <script id="resource-template" type="text/x-handlebars-template">
-        {{#each housing}}
-        <div class="back" id="{{city}}">
-            {{@key}}
-        </div>
-        {{#each this}}
+
+        {{#each transportation}}
         <div class="resource-card">
             <div class="shown" onclick="dropDown('hidden', '{{id}}')">
                 <div>{{name}}</div>
@@ -60,13 +57,12 @@
             </div>
             <div class="hidden" id="{{id}}">
                 <div class="phone">
-                    <a href="https://maps.google.com/?q={{address}}"><p>{{address}}</p></a>
-                    <a class="web" href="{{website}}">{{website}}</a>
+                    <a href="https://maps.google.com/?q={{location}}"><p>{{location}}</p></a>
+                    <a class="web" href="{{email}}">{{email}}</a>
                 </div>
                 <p>{{description}}</p>
             </div>
         </div>
-        {{/each}}
         {{/each}}
 
     </script>

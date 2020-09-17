@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <script src="../../.gitignore/googlesheets/main.js"></script> 
+
     <script src="../../handlebars-v4.7.6.js"></script>
 
     <script>
@@ -49,9 +51,10 @@
     <!-- HANDLE BARS SCRIPT -->
     <script id="resource-template" type="text/x-handlebars-template">
         {{#each shelters}}
-        <div class="back" id="{{city}}">
-            {{city}}
+        <div class="back" id="{{@key}}">
+            {{@key}}
         </div>
+        {{#each this}}
         <div class="resource-card">
             <div class="shown" onclick="dropDown('hidden', '{{id}}')">
                 <div>{{name}}</div>
@@ -66,6 +69,7 @@
                 <p>{{description}}</p>
             </div>
         </div>
+        {{/each}}
         {{/each}}
 
     </script>
@@ -91,7 +95,28 @@
             data = {shelters: data}
             var resourceInfo = document.getElementById("resource-template").innerHTML;
             var template = Handlebars.compile(resourceInfo);
-            var resourceData = template(data)
+            console.log("here");
+            var resourceData = template({
+                shelters: {
+                    ashland: [
+                        {
+                        name: "Tristan",
+                        email: "541-261-1234 google@gamil.com",
+                        location: "2355 ranch rd",
+                        description: 'Emergency supplies - open Monday at 9AM. Information here. Support services have moved next door (inside) to St. Marks Church (140 N. Oak St) to avoid smoke. Pick up food, clothing, bedding, toiletry items, household items, camping supplies, books, shoes, smiling faces and love!! We can deliver\n'
+                        }
+                    ],
+                    pheonix: [
+                        {
+                        name: "Tristan",
+                        email: "541-261-1234 google@gamil.com",
+                        location: "2355 ranch rd",
+                        description: 'Emergency supplies - open Monday at 9AM. Information here. Support services have moved next door (inside) to St. Marks Church (140 N. Oak St) to avoid smoke. Pick up food, clothing, bedding, toiletry items, household items, camping supplies, books, shoes, smiling faces and love!! We can deliver\n'
+                        }
+                    ]
+                }
+            });
+            console.log(resourceData)
             document.getElementById("template").innerHTML += resourceData
         }
 
