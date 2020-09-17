@@ -1,0 +1,103 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Almeda Fire Aid</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="../../handlebars-v4.7.6.js"></script>
+
+    <script>
+        function dropDown(c, i) {
+          var x = document.getElementById(i);
+          if (x.className === c) {
+            x.className += " responsive";
+          } else {
+            x.className = c;
+          }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="dropDown('topnav', 'myTopnav')">
+        <i class="fa fa-bars"></i></a>
+        <a href="../../index.html" class="active">Rouge Valley Fire Aid</a>
+        <a href="../../need.html">Need Help</a>
+        <a href="../../donate.html">Donate</a>
+        <a href="#news">Volunteer</a>
+        <a href="">Espanol</a>
+    </div>
+
+    <div class="back">
+        <a href="../../need.html"><i class="fas fa-arrow-left"></i></a>        
+        <div>Health and Wellness Services</div>
+    </div>
+
+    <!-- this will be templated -->
+    <div id="template">
+
+    </div>
+    
+
+    <!-- HANDLE BARS SCRIPT -->
+    <script id="resource-template" type="text/x-handlebars-template">
+
+        {{#each health}}
+        <div class="back" id="{{city}}">
+            {{city}}
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '{{id}}')">
+                <div>{{name}}</div>
+                <a class="phone" href="tel:{{phone}}">{{phone}}</a>
+                <i>downarrow</i>
+            </div>
+            <div class="hidden" id="{{id}}">
+                <div class="phone">
+                    <a href="https://maps.google.com/?q={{location}}"><p>{{location}}</p></a>
+                    <a class="web" href="{{email}}">{{email}}</a>
+                </div>
+                <p>{{description}}</p>
+            </div>
+        </div>
+        {{/each}}
+
+    </script>
+
+    <script type="text/javascript">
+        var getShelterEntries = () => {
+            var myHeaders = new Headers();
+            var requestOptions = {
+                method: 'GET'
+            };
+
+            let data;
+
+            fetch("https://hr375wgkr2.execute-api.us-west-2.amazonaws.com/dev/shelter", requestOptions)
+            .then(response => response.json())
+            .then(result => populateData(result))
+            .catch(error => console.log('error', error)); 
+        }
+        getShelterEntries()
+        
+        function populateData(result) {
+            var data = JSON.parse(result.body)
+            data = {shelters: data}
+            var resourceInfo = document.getElementById("resource-template").innerHTML;
+            var template = Handlebars.compile(resourceInfo);
+            var resourceData = template(data)
+            document.getElementById("template").innerHTML += resourceData
+        }
+
+
+    </script>
+
+</body>
+
+</html>
