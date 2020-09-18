@@ -51,16 +51,15 @@
         {{#each translation}}
         <div class="resource-card">
             <div class="shown" onclick="dropDown('hidden', '{{id}}')">
-                <div>{{name}}</div>
-                <a class="phone" href="tel:{{phone}}">{{phone}}</a>
-                <i>downarrow</i>
+                <div class="flex">
+                    <div>{{name}}</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:{{contact}}">{{contact}}</a>
+                <a href="https://maps.google.com/?q={{location}}"><p>{{location}}</p></a>
             </div>
             <div class="hidden" id="{{id}}">
-                <div class="phone">
-                    <a href="https://maps.google.com/?q={{location}}"><p>{{location}}</p></a>
-                    <a class="web" href="{{email}}">{{email}}</a>
-                </div>
-                <p>{{description}}</p>
+                <p>{{desc}}</p>
             </div>
         </div>
         {{/each}}

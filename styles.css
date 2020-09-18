@@ -159,8 +159,9 @@ h2 {text-align: center;}
         border-width: 1px;
     }
 
-    .resource-card i {
-        float: right;
+    .flex{
+        display: flex;
+        justify-content: space-between;
     }
 
     .shown {
