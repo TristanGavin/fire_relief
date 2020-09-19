@@ -36,7 +36,6 @@
   <h2>Make A Donation</h2>
 
   <div id="template">
-
     {{#each entries}}
     <div class="back" id="{{city}}">
         <b>{{@key}}</b>
@@ -50,6 +49,7 @@
             </div>
             <a class="phone" href="tel:{{contact}}">{{contact}}</a>
             <a><p>{{location}}</p></a>
+            <p>{{time_open}}</p>
         </div>
         <div class="hidden" id="{{id}}">
             <p>{{desc}}</p>

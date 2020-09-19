@@ -79,7 +79,7 @@ function parse_housing(rows) {
                 if (!(current_city in entries)) {
                     entries[current_city] = [];
                 }
-                entries[current_city].push({name, contact, location, id: i desc: desc_offer});
+                entries[current_city].push({name, contact, location, id: i, desc: desc_offer});
             }
         }
     }
@@ -102,7 +102,7 @@ function parse_donation(rows) {
             if (!(current_city in entries)) {
                 entries[current_city] = [];
             }
-            entries[current_city].push({name, contact, location, time_open, id: i, desc: desc === undefined ? "" : desc});
+            entries[current_city].push({name, contact, location, time_open, id: i,  desc: desc === undefined ? "" : desc});
         }
     }
     
@@ -134,12 +134,12 @@ function parse_common(rows) {
 const spreadsheetData = [
     {
         name: 'food',
-        range: 'FOOD/SUPPLIES!A5:D110',
+        range: 'FOOD/SUPPLIES/Comida/Alimentos!A5:D110',
         parse: parse_common
     },
     {
         name: 'shelters',
-        range: 'SHELTERS!A5:D100',
+        range: 'SHELTERS/Refugios!A5:D100',
         parse: parse_common
     },
     {
@@ -177,7 +177,7 @@ const spreadsheetData = [
     },
     {
         name: 'donations',
-        range: "'DONATION DROP OFF'!A5:D35",
+        range: "'DONATION DROP OFF'!A5:E35",
         parse: parse_donation
     }
 ];
