@@ -40,34 +40,34 @@ h2 {text-align: center;}
 
 
 /* NAVBAR STYLES */
-.topnav {
+.topnav { 
     overflow: hidden;
-    background-color: white;
-    border-bottom: solid black;
-    border-width: 1px;
-  }
+    background-color: white; 
+    border-bottom: solid black; 
+    border-width: 1px; 
+} 
 
-  .topnav a {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 10px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+   .topnav a { 
+     float: left; 
+     display: block; 
+     text-align: center; 
+     padding: 10px 16px; 
+     text-decoration: none; 
+     font-size: 17px; 
+   }
   
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
+   .topnav a:hover { 
+     background-color: #ddd; 
+     color: black; 
+   } 
   
-  .topnav a.active {
-    color: black;
-  }
+   .topnav a.active { 
+     color: black; 
+   } 
   
-  .topnav .icon {
-    display: none;
-  }
+   .topnav .icon { 
+     display: none; 
+   } 
 
 
 
@@ -75,15 +75,14 @@ h2 {text-align: center;}
 
 /* PHONE STYLES */
 
-@media screen and (max-width: 600px) {
+
     .topnav a:not(:nth-child(2)) {display: none;}
     .topnav a.icon {
       float: left;
       display: block;
     }
-}
 
-@media screen and (max-width: 600px) {
+
 
     /* NAVBAR STYLES */
     .topnav.responsive {position: relative;}
@@ -212,4 +211,3 @@ h2 {text-align: center;}
 }
 
 #no-border{border:none;}
-}

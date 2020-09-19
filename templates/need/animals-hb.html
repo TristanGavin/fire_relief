@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Almeda Fire Aid</title>
+    <link rel="stylesheet" href="../styles.css">
+
+    <script src="../../handlebars-v4.7.6.js"></script>
+    <script src="https://kit.fontawesome.com/f52b966be9.js" crossorigin="anonymous"></script>
+
+    <script>
+        function dropDown(c, i) {
+          var x = document.getElementById(i);
+          if (x.className === c) {
+            x.className += " responsive";
+          } else {
+            x.className = c;
+          }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="dropDown('topnav', 'myTopnav')">
+        <i class="fa fa-bars"></i></a>
+        <a href="../index.html" class="active">Rogue Valley Fire Aid</a>
+        <a href="../need.html">Need Help</a>
+        <a href="../donate.html">Donate</a>
+    </div>
+
+    <div class="back">
+        <a href="../need.html"><i class="fas fa-arrow-left"></i></a>        
+        <div>Livestock and Animal Housing</div>
+    </div>
+
+    <!-- this will be templated -->
+    <div id="template">  
+        {{#each entries}}
+        <div class="back" id="{{city}}">
+            <b>{{@key}}</b>
+        </div>
+        {{#each this}}
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '{{id}}')">
+                <div class="flex">
+                    <div>{{name}}</div>
+                    <i class="fas fa-sort-down"></i>
+                </div>
+                <a class="phone" href="tel:{{contact}}">{{contact}}</a>
+                <a><p>{{location}}</p></a>
+            </div>
+            <div class="hidden" id="{{id}}">
+                <p>{{desc}}</p>
+            </div>
+        </div>
+        {{/each}}
+        {{/each}}
+    </div>
+    
+</body>
+
+</html>
