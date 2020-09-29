@@ -18,6 +18,7 @@ h2 {text-align: center;}
 .info p{
     padding: 0px 10px;
     margin-top: 14px;
+    font-size: 12px;
 }
 
 #buttons{
@@ -33,11 +34,7 @@ h2 {text-align: center;}
     padding: 8px 4px;
     margin: 4px;
     text-align: left;
-}
-
-.resource-list {
-    display: flex;
-    justify-content: center;
+    background-color: #ddebf5;
 }
 
 /* keep hidden */
@@ -125,12 +122,6 @@ h2 {text-align: center;}
     #buttons a {width: 92%;}
 
     /* EMERGENCY RESOURCES */
-    .resource-list ul {
-        margin: 0;
-        padding-left: 0;
-        list-style-type: none;
-    }
-
     .resources {
         font-size: 20px;
         margin-left: 10px;
@@ -139,17 +130,9 @@ h2 {text-align: center;}
         margin-bottom: 0;
     }
 
-    .resource-list {
-        margin: 10px 25px;
+    .resource-list ul li {
+        margin-bottom: 4px;
     }
-
-    .resource-list ul li{
-        padding: 10px 5px;
-        border-bottom: solid black;
-        border-width: 1px;
-    }
-    
-    .resource-list ul:last-child {border: none}
 
     /* BACK BUTTON */
     .back {
