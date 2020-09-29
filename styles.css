@@ -1,3 +1,8 @@
+/* 
+color bold blue #31708e 
+
+*/
+
 /* GLOBAL STYLES */
 html, body {margin: 0;padding: 0;}
 a {text-decoration: none;color: black;}
@@ -13,6 +18,7 @@ h2 {text-align: center;}
 .info p{
     padding: 0px 10px;
     margin-top: 14px;
+    font-size: 12px;
 }
 
 #buttons{
@@ -28,11 +34,7 @@ h2 {text-align: center;}
     padding: 8px 4px;
     margin: 4px;
     text-align: left;
-}
-
-.resource-list {
-    display: flex;
-    justify-content: center;
+    background-color: #ddebf5;
 }
 
 /* keep hidden */
@@ -42,7 +44,7 @@ h2 {text-align: center;}
 /* NAVBAR STYLES */
 .topnav { 
     overflow: hidden;
-    background-color: white; 
+    background-color: #31708e; 
     border-bottom: solid black; 
     border-width: 1px; 
 } 
@@ -58,15 +60,16 @@ h2 {text-align: center;}
   
    .topnav a:hover { 
      background-color: #ddd; 
-     color: black; 
+     color: white; 
    } 
   
    .topnav a.active { 
-     color: black; 
+     color: white; 
    } 
   
    .topnav .icon { 
      display: none; 
+     color: white;
    } 
 
 
@@ -93,6 +96,7 @@ h2 {text-align: center;}
         float: none;
         display: block;
         text-align: left;
+        background-color:#ddebf5;
     }
 
     .topnav.responsive .icon {
@@ -100,12 +104,14 @@ h2 {text-align: center;}
         left: 0;
         top: 0;
         border: none;
+        background-color: #31708e;
       }
 
     .topnav.topnav.responsive a:nth-child(2){
         padding-left: 2px;
         margin-left: 58.66666px;
         border: none;
+        background-color: #31708e;
     }
 
     #buttons{
@@ -116,31 +122,17 @@ h2 {text-align: center;}
     #buttons a {width: 92%;}
 
     /* EMERGENCY RESOURCES */
-    .resources {display: none;}
-    .resource-list ul {
-        margin: 0;
-        padding-left: 0;
-        list-style-type: none;
-    }
-
-    .short-resources {
+    .resources {
+        font-size: 20px;
         margin-left: 10px;
         display: inline-block;
         color: black;
         margin-bottom: 0;
     }
 
-    .resource-list {
-        margin: 10px 25px;
+    .resource-list ul li {
+        margin-bottom: 4px;
     }
-
-    .resource-list ul li{
-        padding: 10px 5px;
-        border-bottom: solid black;
-        border-width: 1px;
-    }
-    
-    .resource-list ul:last-child {border: none}
 
     /* BACK BUTTON */
     .back {
