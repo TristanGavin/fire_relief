@@ -1,0 +1,422 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Almeda Fire Aid</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="../../handlebars-v4.7.6.js"></script>
+
+    <script>
+        function dropDown(c, i) {
+          var x = document.getElementById(i);
+          if (x.className === c) {
+            x.className += " responsive";
+          } else {
+            x.className = c;
+          }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="dropDown('topnav', 'myTopnav')">
+        <i class="fa fa-bars"></i></a>
+        <a href="../../index.html" class="active">Rouge Valley Fire Aid</a>
+        <a href="../../need.html">Need Help</a>
+        <a href="../../donate.html">Donate</a>
+        <a href="#news">Volunteer</a>
+        <a href="">Espanol</a>
+    </div>
+
+    <div class="back">
+        <a href="../../need.html"><i class="fas fa-arrow-left"></i></a>        
+        <div>Livestock and Animal Housing</div>
+    </div>
+
+    <!-- this will be templated -->
+    <div id="template">  
+        <div class="back" id="">
+            <b>ASHLAND</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '2')">
+                <div class="flex">
+                    <div>Amy Stewart</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:5416259610">5416259610</a>
+                <a href="https://maps.google.com/?q=Ashland "><p>Ashland </p></a>
+            </div>
+            <div class="hidden" id="2">
+                <p>care if one dog or easy bonded pair at our house; must be good with cats, kids, and other dogs</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '3')">
+                <div class="flex">
+                    <div>Aiyana Green</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:5418404284">5418404284</a>
+                <a href="https://maps.google.com/?q=SE of Ashland"><p>SE of Ashland</p></a>
+            </div>
+            <div class="hidden" id="3">
+                <p>We have a pickup and a mostly enclosed wo horse trailer for animal transport. We live close to the Greensprings.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '4')">
+                <div class="flex">
+                    <div>Aiyana Green</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:5418404284">5418404284</a>
+                <a href="https://maps.google.com/?q=SE of Ashland"><p>SE of Ashland</p></a>
+            </div>
+            <div class="hidden" id="4">
+                <p>We have two 1/4 acre paddocks for livestock, with 5&#x27; field/no climb fencing. Located near the Greensprings. We have dogs, cats, llamas, goats and chickens on the property.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '5')">
+                <div class="flex">
+                    <div>Christina Begley</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:510-387-6174, cgbegley@gmail.com">510-387-6174, cgbegley@gmail.com</a>
+                <a href="https://maps.google.com/?q=Emigrant Lake"><p>Emigrant Lake</p></a>
+            </div>
+            <div class="hidden" id="5">
+                <p>1 acre fenced pasture for horse(s) or other animals; can also take dogs/cats</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '6')">
+                <div class="flex">
+                    <div>Erica Thompson</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:262-510-8428">262-510-8428</a>
+                <a href="https://maps.google.com/?q=Ashland, OR"><p>Ashland, OR</p></a>
+            </div>
+            <div class="hidden" id="6">
+                <p>I can foster a cat or rabbit as long as is needed (no children or other pets on site)</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '7')">
+                <div class="flex">
+                    <div>Greg Panero</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:925-708-9278">925-708-9278</a>
+                <a href="https://maps.google.com/?q=Ashland"><p>Ashland</p></a>
+            </div>
+            <div class="hidden" id="7">
+                <p>Room for cats, dogs, or other domesticated animals. People on site for direct care and plenty of food and water to support. </p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '8')">
+                <div class="flex">
+                    <div>Jasmyne Chandler</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-531-6425">541-531-6425</a>
+                <a href="https://maps.google.com/?q=Cove rd up Indian Memorial in Ashland "><p>Cove rd up Indian Memorial in Ashland </p></a>
+            </div>
+            <div class="hidden" id="8">
+                <p>We live on 10 acres 7 miles up Indian Memorial and can offer space for pets providing they don&#x27;t need a fence, get along with other dogs and kids, and won&#x27;t kill chickens. We can also provide space for chickens in our enclosed chicken yard and coop. </p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '9')">
+                <div class="flex">
+                    <div>Jon &amp; Jen Kieber/Olson</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:Jon - 541-890-8634 Jen - 541-535-3437">Jon - 541-890-8634 Jen - 541-535-3437</a>
+                <a href="https://maps.google.com/?q=Ashland"><p>Ashland</p></a>
+            </div>
+            <div class="hidden" id="9">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '10')">
+                <div class="flex">
+                    <div>Jordan Stewart</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:jsstewart86@gmail.com
+509-521-4321">jsstewart86@gmail.com
+509-521-4321</a>
+                <a href="https://maps.google.com/?q=N. Ashland"><p>N. Ashland</p></a>
+            </div>
+            <div class="hidden" id="10">
+                <p>I have a place for a couple more critters, especially dogs that have not found their owners yet.</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>CENTRAL POINT</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '13')">
+                <div class="flex">
+                    <div>Jackson county fire district 5</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:"></a>
+                <a href="https://maps.google.com/?q=2885 Oakridge Ave Central Point it’s a large green shop here"><p>2885 Oakridge Ave Central Point it’s a large green shop here</p></a>
+            </div>
+            <div class="hidden" id="13">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '14')">
+                <div class="flex">
+                    <div>Southern Oregon Veterinary Specialty Center</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-282-7711">541-282-7711</a>
+                <a href="https://maps.google.com/?q=4901 Biddle Rd, Central Point"><p>4901 Biddle Rd, Central Point</p></a>
+            </div>
+            <div class="hidden" id="14">
+                <p>24 Hour Emergency Veterinary Care, information here</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>GRANTS PASS</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '17')">
+                <div class="flex">
+                    <div>Josephine County Fairgrounds</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:"></a>
+                <a href="https://maps.google.com/?q=1451 Fairgrounds Rd Grants Pass"><p>1451 Fairgrounds Rd Grants Pass</p></a>
+            </div>
+            <div class="hidden" id="17">
+                <p>Shelter for evacuees with livestock</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '18')">
+                <div class="flex">
+                    <div>Rogue Valley Humane Society</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:"></a>
+                <a href="https://maps.google.com/?q=421 NW Scenic Drive, Grants Pass"><p>421 NW Scenic Drive, Grants Pass</p></a>
+            </div>
+            <div class="hidden" id="18">
+                <p>Opening pet food bank for those in need</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '19')">
+                <div class="flex">
+                    <div>Tail Waggers Rescue</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-362-1663">541-362-1663</a>
+                <a href="https://maps.google.com/?q=560 NE F Street, # A127 Grants Pass "><p>560 NE F Street, # A127 Grants Pass </p></a>
+            </div>
+            <div class="hidden" id="19">
+                <p>Tail Waggers Rescue is able to assist evacuees with dog food, bowls, leashes, and some flea prevention. We have a limited amount of cat food.  I can deliver to you or meet you.  
+https://www.facebook.com/groups/JoCoEmergencyHelp/permalink/3302931276422601/</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>MEDFORD</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '22')">
+                <div class="flex">
+                    <div>Dawn Naymik</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-646-8493">541-646-8493</a>
+                <a href="https://maps.google.com/?q=Griffin cr, Medford "><p>Griffin cr, Medford </p></a>
+            </div>
+            <div class="hidden" id="22">
+                <p>critters - I currently have a flock of free range chickens w/rooster. Willing to take other inside caged or outdoor animals. 1 acre, room for more and willing to financially support their care. I have experience with everything from snakes &amp; frogs to horses. </p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '23')">
+                <div class="flex">
+                    <div>Medford Animal Hospital</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-772-2222">541-772-2222</a>
+                <a href="https://maps.google.com/?q=619 Market St"><p>619 Market St</p></a>
+            </div>
+            <div class="hidden" id="23">
+                <p>Offering boarding facilities</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '24')">
+                <div class="flex">
+                    <div>West Main Animal 
+Hospital</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-282-9811">541-282-9811</a>
+                <a href="https://maps.google.com/?q=2428 W Main St # 100, Medford,"><p>2428 W Main St # 100, Medford,</p></a>
+            </div>
+            <div class="hidden" id="24">
+                <p>Open for Urgent Cases and they have 
+cleared their Schedules.</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>APPLEGATE</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '27')">
+                <div class="flex">
+                    <div>Gilly Gifford</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:406-250-8884 or 541-708-1565">406-250-8884 or 541-708-1565</a>
+                <a href="https://maps.google.com/?q=Ruch near Cantrell Buckley"><p>Ruch near Cantrell Buckley</p></a>
+            </div>
+            <div class="hidden" id="27">
+                <p>I have a medium livestock trailer and can help transport animals. I can house goats, horses, sheep, cows or small pigs. Our farm has 3 pastures. One is completely empty and 1 acre with a barn, this could be an ideal spot for horses or sheep. Im happy to house goats in milk with my milkers if they are healthy. I can keep goats and cows milked (milk will be fed to pigs)</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>PORTLAND</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '30')">
+                <div class="flex">
+                    <div>Attie O&#x27;Brien </div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:602-885-8531">602-885-8531</a>
+                <a href="https://maps.google.com/?q=Portland"><p>Portland</p></a>
+            </div>
+            <div class="hidden" id="30">
+                <p>In case extra help is needed, here in Portland and can take 1-2 small/med dogs. I have one male dog. </p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>SAMS VALLEY</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '33')">
+                <div class="flex">
+                    <div>Jordan Bruyn</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-419-4686">541-419-4686</a>
+                <a href="https://maps.google.com/?q=Sams Valley, OR"><p>Sams Valley, OR</p></a>
+            </div>
+            <div class="hidden" id="33">
+                <p>I currently have a large run with a small flock of chickens and ducks w/ room for more. 9 acres of room just not fully fenced. Willing to take in other small animals (rabbits, cats, goats, dogs, etc). I have professional and personal experience with small animals (rabbits, birds, guinea pigs, ect.) &amp; exotics (snakes, lizards, frogs, turtles, ect.). I have a hutch and multiple carriers if needed. I also work at a pet store so I can assist with animal supplies if needed.  </p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>BEND</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '36')">
+                <div class="flex">
+                    <div>Bill Martin</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-203-0016">541-203-0016</a>
+                <a href="https://maps.google.com/?q=22540 Rickard Rd, Bend"><p>22540 Rickard Rd, Bend</p></a>
+            </div>
+            <div class="hidden" id="36">
+                <p>Horse property in Bend with room for 30 horses and parking for trailers, etc. </p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>VARIOUS LOCATIONS</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '40')">
+                <div class="flex">
+                    <div>Southern Oregon Emergency Aid</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-226-1124">541-226-1124</a>
+                <a href="https://maps.google.com/?q="><p></p></a>
+            </div>
+            <div class="hidden" id="40">
+                <p>Transportation/help with animals</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '41')">
+                <div class="flex">
+                    <div>Rogue Valley Equestrian Group on Facebook</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:"></a>
+                <a href="https://maps.google.com/?q="><p></p></a>
+            </div>
+            <div class="hidden" id="41">
+                <p>Resources for transporting horses, livestock.</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>Missing/Lost Fire Pets Southern Oregon</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '49')">
+                <div class="flex">
+                    <div>Medford Animal Hospital</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-772-2222">541-772-2222</a>
+                <a href="https://maps.google.com/?q=Info here."><p>Info here.</p></a>
+            </div>
+            <div class="hidden" id="49">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '51')">
+                <div class="flex">
+                    <div>Sep. 10, 9:05 pm pictures of lost pets at Southern Oregon Veterinary Speciality Center</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-282-7711">541-282-7711</a>
+                <a href="https://maps.google.com/?q=Info here."><p>Info here.</p></a>
+            </div>
+            <div class="hidden" id="51">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '52')">
+                <div class="flex">
+                    <div>Lost dog found on S. Peach Street, Medford</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:"></a>
+                <a href="https://maps.google.com/?q=Pictures and info here."><p>Pictures and info here.</p></a>
+            </div>
+            <div class="hidden" id="52">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

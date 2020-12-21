@@ -1,0 +1,155 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Almeda Fire Aid</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="../../handlebars-v4.7.6.js"></script>
+
+    <script>
+        function dropDown(c, i) {
+          var x = document.getElementById(i);
+          if (x.className === c) {
+            x.className += " responsive";
+          } else {
+            x.className = c;
+          }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="dropDown('topnav', 'myTopnav')">
+        <i class="fa fa-bars"></i></a>
+        <a href="../../index.html" class="active">Rouge Valley Fire Aid</a>
+        <a href="../../need.html">Need Help</a>
+        <a href="../../donate.html">Donate</a>
+        <a href="#news">Volunteer</a>
+        <a href="">Espanol</a>
+    </div>
+
+    <div class="back">
+        <a href="../../need.html"><i class="fas fa-arrow-left"></i></a>
+        <div>Translation Resources</div>
+    </div>
+
+    <!-- this will be templated -->
+    <div id="template">
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '0')">
+                <div class="flex">
+                    <div>Hannah</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:510-495-5436">510-495-5436</a>
+                <a href="https://maps.google.com/?q="><p></p></a>
+            </div>
+            <div class="hidden" id="0">
+                <p>translation in writing, by phone, or in person (Ashland-Rogue Valley area) //  می توانم از زبان فارسی یا از زبان انگلیسی ترجمه بکنم // میں انگریزی یا  اردو سے ترجمہ كر سكتی ہوں // मैं अंग्रेज़ी या िहन्दी से अनुवाद कर सक्ती हुं</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '1')">
+                <div class="flex">
+                    <div></div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:https://docs.google.com/spreadsheets/d/1dkEmAsPxB8vyKzBIiFfVW0DjGB_no7eCfAyFJyJ2UfA/edit?usp&#x3D;sharing">https://docs.google.com/spreadsheets/d/1dkEmAsPxB8vyKzBIiFfVW0DjGB_no7eCfAyFJyJ2UfA/edit?usp&#x3D;sharing</a>
+                <a href="https://maps.google.com/?q="><p></p></a>
+            </div>
+            <div class="hidden" id="1">
+                <p>Lista de recursos en el Rogue Valley en Ingles y Español</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '2')">
+                <div class="flex">
+                    <div>Tess</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:tessikamiller@gmail.com ">tessikamiller@gmail.com </a>
+                <a href="https://maps.google.com/?q="><p></p></a>
+            </div>
+            <div class="hidden" id="2">
+                <p>translation in writing, by phone, or in person (Central Point) / ofrezco traducción de todos tipos</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '3')">
+                <div class="flex">
+                    <div>Calvin </div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:calvin.c.harrison@gmail.com">calvin.c.harrison@gmail.com</a>
+                <a href="https://maps.google.com/?q="><p></p></a>
+            </div>
+            <div class="hidden" id="3">
+                <p>Can provide written translations, some verbal translation but I&#x27;m not based in US // ofrezco traducción escrita y puedo ayudar con traducción vivo pero será más dificíl porque no estoy en los EEUU // ممنك اترجم مستندات او رسائل مكتوبة ولاكن الترجمة المباشرة صعبة الى حد ما لآني ليست في الولايات المتحدة</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '4')">
+                <div class="flex">
+                    <div>Alessandro</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:alessandro.broido@district6.org">alessandro.broido@district6.org</a>
+                <a href="https://maps.google.com/?q="><p></p></a>
+            </div>
+            <div class="hidden" id="4">
+                <p>Written translations, over the phone interpretation/general communication and outreach in Spanish, in person interpretation on weekends. Traducciones escritas, interpretación telefónica / comunicación general y asistencia en español, interpretación en persona los fines de semana.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '5')">
+                <div class="flex">
+                    <div>Juliana</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:jufelix16@gmail.com">jufelix16@gmail.com</a>
+                <a href="https://maps.google.com/?q="><p></p></a>
+            </div>
+            <div class="hidden" id="5">
+                <p>I can help with any type of communication or informal translation, either ir person or over the phone.
+Se você precisa de ajuda para traduzir algo ou se comunicar em inglês, por favor, entre em contato! ficarei feliz em ajudar. </p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '6')">
+                <div class="flex">
+                    <div>Evan</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:evan@wilsontranslation.com">evan@wilsontranslation.com</a>
+                <a href="https://maps.google.com/?q="><p></p></a>
+            </div>
+            <div class="hidden" id="6">
+                <p>Written, verbal communication. By phone mainly, but can do in-person with appointment</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '7')">
+                <div class="flex">
+                    <div>Mary</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:marysackley@gmail.com">marysackley@gmail.com</a>
+                <a href="https://maps.google.com/?q="><p></p></a>
+            </div>
+            <div class="hidden" id="7">
+                <p>spoken or written translation, phone interpretation or in person (very flexible schedule) and general assistance, including medical interpretation. Traducciones escritas, interpretación telefónica / comunicación general y asistencia en español, interpretación médico. located in ashland</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

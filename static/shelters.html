@@ -1,0 +1,466 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Almeda Fire Aid</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="../../.gitignore/googlesheets/main.js"></script> 
+
+    <script src="../../handlebars-v4.7.6.js"></script>
+
+    <script>
+        function dropDown(c, i) {
+          var x = document.getElementById(i);
+          if (x.className === c) {
+            x.className += " responsive";
+          } else {
+            x.className = c;
+          }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="dropDown('topnav', 'myTopnav')">
+        <i class="fa fa-bars"></i></a>
+        <a href="../../index.html" class="active">Rouge Valley Fire Aid</a>
+        <a href="../../need.html">Need Help</a>
+        <a href="../../donate.html">Donate</a>
+        <a href="#news">Volunteer</a>
+        <a href="">Espanol</a>
+    </div>
+
+    <div class="back">
+        <a href="../../need.html"><i class="fas fa-arrow-left"></i></a>
+        <div>List of Shelters</div>
+    </div>
+
+    <!-- this will be templated -->
+    <div id="template">
+        <div class="back" id="">
+            <b></b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '0')">
+                <div class="flex">
+                    <div>Josephine County Call Center</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 474-5305">(541) 474-5305</a>
+                <a href="https://maps.google.com/?q="><p></p></a>
+            </div>
+            <div class="hidden" id="0">
+                <p>Call for open locations</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>ASHLAND</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '3')">
+                <div class="flex">
+                    <div>Ashland Christian Fellowship Shelter</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 482-8539">(541) 482-8539</a>
+                <a href="https://maps.google.com/?q=50 W Hersey, Ashland"><p>50 W Hersey, Ashland</p></a>
+            </div>
+            <div class="hidden" id="3">
+                <p>for more information visit acfweb.org   Registration is required and reserved for fire displaced people only.  Parking lot is open to displaced people now forced to live out of their vehicle to safely park overnight. They have a communal indoor space that has wifi. They are also providing cold lunches and hot dinners.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '4')">
+                <div class="flex">
+                    <div>Ashland Elks Club (Daytime services)</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 482-3911">(541) 482-3911</a>
+                <a href="https://maps.google.com/?q=255 E Main (use the back entrance in the alley)"><p>255 E Main (use the back entrance in the alley)</p></a>
+            </div>
+            <div class="hidden" id="4">
+                <p>Offering day time shelter from 10 AM - 7PM. There are places to sit, public use computer(s), free wifi &amp; hot meals are served from 11 AM - 7 PM Counseling/therapy available on-site. Donation site downstairs.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '5')">
+                <div class="flex">
+                    <div>Northwest Pizza (Daytime services)</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 488-2080">(541) 488-2080</a>
+                <a href="https://maps.google.com/?q=1585 Siskiyou Blvd., Ashland"><p>1585 Siskiyou Blvd., Ashland</p></a>
+            </div>
+            <div class="hidden" id="5">
+                <p>Water, staging location. Wifi &amp; restrooms available</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '6')">
+                <div class="flex">
+                    <div>Southern Oregon University (Starting on 9/17 the SOU Respite Shelter (day shelter) will be moved to the Rogue River Room in the Student Union) (new address will be updated on 9/17)</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:"></a>
+                <a href="https://maps.google.com/?q=Webster St, Ashland (near 7/11)"><p>Webster St, Ashland (near 7/11)</p></a>
+            </div>
+            <div class="hidden" id="6">
+                <p>Providing a daytime shelter (8:30am - 8:30pm) with support in coordinating resources. Air-conditioning, coffee, water, WIFI, and bathrooms available. Info here. </p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '7')">
+                <div class="flex">
+                    <div>SOU Parking Lot 36 (commuter lot)</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:"></a>
+                <a href="https://maps.google.com/?q=S. Mountain Ave. and Henry Street"><p>S. Mountain Ave. and Henry Street</p></a>
+            </div>
+            <div class="hidden" id="7">
+                <p>Overnight parking for RVs. No hookups available.</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>CENTRAL POINT</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '10')">
+                <div class="flex">
+                    <div>Jackson County Fairgrounds (the expo)</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 774-8270">(541) 774-8270</a>
+                <a href="https://maps.google.com/?q=1 Peninger Rd., Central Point, OR"><p>1 Peninger Rd., Central Point, OR</p></a>
+            </div>
+            <div class="hidden" id="10">
+                <p>Full-service evacuation center with crisis management support, medical care, care for Seniors, bilingual support, food, showers, laundry, cots/bedding, etc. for those folks who have no other option for safe housing. Transportation is available.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '11')">
+                <div class="flex">
+                    <div>LDS Church</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 664-2050">(541) 664-2050</a>
+                <a href="https://maps.google.com/?q=2305 Taylor Rd, Central Point"><p>2305 Taylor Rd, Central Point</p></a>
+            </div>
+            <div class="hidden" id="11">
+                <p>Running an evacuation shelter in coordination with the Red Cross</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '12')">
+                <div class="flex">
+                    <div>Trinity Baptist</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 826-3572">(541) 826-3572</a>
+                <a href="https://maps.google.com/?q=2555 Corey Rd, Central Point"><p>2555 Corey Rd, Central Point</p></a>
+            </div>
+            <div class="hidden" id="12">
+                <p>Temporary Shelter for those displaced by fire. Serving breakfast, lunch and dinner. Have indoor spaces available, as well as a parking lot for vehicals. Folks sleeping outside of the building will not have access to the indoor facilities during the night-time hours</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>EAGLE POINT</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '15')">
+                <div class="flex">
+                    <div>Eagle Point Community 
+Bible Church</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 826-2767">(541) 826-2767</a>
+                <a href="https://maps.google.com/?q=27 S Shasta Ave, Eagle Point"><p>27 S Shasta Ave, Eagle Point</p></a>
+            </div>
+            <div class="hidden" id="15">
+                <p></p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>GOLD HILL</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '18')">
+                <div class="flex">
+                    <div>Patrick Elementary</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 494-6840">(541) 494-6840</a>
+                <a href="https://maps.google.com/?q=1500 2nd Ave, Gold Hill"><p>1500 2nd Ave, Gold Hill</p></a>
+            </div>
+            <div class="hidden" id="18">
+                <p></p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>GRANTS PASS</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '21')">
+                <div class="flex">
+                    <div>Cascade Mountain Ranch</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 890-8435">(541) 890-8435</a>
+                <a href="https://maps.google.com/?q=2500 Jumpoff Joe Creek Rd, Grants Pass"><p>2500 Jumpoff Joe Creek Rd, Grants Pass</p></a>
+            </div>
+            <div class="hidden" id="21">
+                <p>Currently offering free housing for those displayed by fires. ***Volunteer Coordinator: Christie Osborn - (541) 471-1818</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '22')">
+                <div class="flex">
+                    <div>Edgewater Christian Fellowship</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 474-7172">(541) 474-7172</a>
+                <a href="https://maps.google.com/?q=101 Assembly Cir, Grants Pass, OR 97526"><p>101 Assembly Cir, Grants Pass, OR 97526</p></a>
+            </div>
+            <div class="hidden" id="22">
+                <p>Call to confirm space. Large assembly space - starting Saturday 9/12/20  there will be room for 100 additional people, shared space in sanctuary, bathrooms, showers, they have everything for sleeping, cats and dogs allowed (camping space on grass, parking lot for vans and rvs. 2 on site showers.)</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '23')">
+                <div class="flex">
+                    <div>Grants Pass Shopping Center parking lot</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:"></a>
+                <a href="https://maps.google.com/?q=108th Ave NE, Grants Pass"><p>108th Ave NE, Grants Pass</p></a>
+            </div>
+            <div class="hidden" id="23">
+                <p>Parking lot is open to evacuees</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '24')">
+                <div class="flex">
+                    <div>IOOF Cemetary</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 450-5433 (KC Carr)
+(541) 476-7746 (Lester Robson)">(541) 450-5433 (KC Carr)
+(541) 476-7746 (Lester Robson)</a>
+                <a href="https://maps.google.com/?q=Agness and Foothill, Grants Pass "><p>Agness and Foothill, Grants Pass </p></a>
+            </div>
+            <div class="hidden" id="24">
+                <p>Front of the cemetery open to RVs. Dry camping only. Call first</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '25')">
+                <div class="flex">
+                    <div>Josephine County Fairgrounds - Not a donation drop site</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:"></a>
+                <a href="https://maps.google.com/?q=1451 Fairgrounds Rd Grants Pass"><p>1451 Fairgrounds Rd Grants Pass</p></a>
+            </div>
+            <div class="hidden" id="25">
+                <p>for evacuees with livestock</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '26')">
+                <div class="flex">
+                    <div>Parkway Christian Center</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 479-2639">(541) 479-2639</a>
+                <a href="https://maps.google.com/?q=229 NE Beacon Dr, Grants Pass"><p>229 NE Beacon Dr, Grants Pass</p></a>
+            </div>
+            <div class="hidden" id="26">
+                <p>Housing people in gym. Info here. </p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '27')">
+                <div class="flex">
+                    <div>Redwood Christian Church</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 474-0778">(541) 474-0778</a>
+                <a href="https://maps.google.com/?q=4995 Redwood Ave, Grants Pass"><p>4995 Redwood Ave, Grants Pass</p></a>
+            </div>
+            <div class="hidden" id="27">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '28')">
+                <div class="flex">
+                    <div>St. Anne Catholic Church</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 476-2240">(541) 476-2240</a>
+                <a href="https://maps.google.com/?q=1131 NE 10th St Grants Pass"><p>1131 NE 10th St Grants Pass</p></a>
+            </div>
+            <div class="hidden" id="28">
+                <p>Parking lot access with restrooms</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>KLAMATH FALLS</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '31')">
+                <div class="flex">
+                    <div>Klamath Family Warming Center - Not a Shelter</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:Contact is Natalie (541) 882-3500">Contact is Natalie (541) 882-3500</a>
+                <a href="https://maps.google.com/?q=235 S Laguna Street Klamath Falls OR"><p>235 S Laguna Street Klamath Falls OR</p></a>
+            </div>
+            <div class="hidden" id="31">
+                <p>The Klamath Family Warming Center - Place to come for help getting your energy turned back on or getting your bills paid. Similar to Ashland Community Resource Center</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>MEDFORD</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '34')">
+                <div class="flex">
+                    <div>First Presbyterian Church</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(907) 347-3365 (Pastor Murray Richmond)">(907) 347-3365 (Pastor Murray Richmond)</a>
+                <a href="https://maps.google.com/?q=85 S. Holly, Medford"><p>85 S. Holly, Medford</p></a>
+            </div>
+            <div class="hidden" id="34">
+                <p>Offering emergency shelter for up to 25 individuals. That have been displaced. Food and bedding will be provided. Mostly a greenway Shelter.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '35')">
+                <div class="flex">
+                    <div>New Life Nazarene Church</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 779-7777">(541) 779-7777</a>
+                <a href="https://maps.google.com/?q=1974 East McAndrews, Medford "><p>1974 East McAndrews, Medford </p></a>
+            </div>
+            <div class="hidden" id="35">
+                <p>City of Medford approved shelter with food and beds.  Room for 200 vehicles and RVs, call ahead. Wifi and restrooms available</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '36')">
+                <div class="flex">
+                    <div>North Medford High School</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 842-3670">(541) 842-3670</a>
+                <a href="https://maps.google.com/?q=1900 N. Keene Way Drive, Medford"><p>1900 N. Keene Way Drive, Medford</p></a>
+            </div>
+            <div class="hidden" id="36">
+                <p>Parking lot and gym open at 6:30 tonight (9/9) - showers and restrooms available. Unsure if shelter is being offered or longer term parking.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '37')">
+                <div class="flex">
+                    <div>Salvation Army Hope Shelter (currently full)</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-773-6965 x101">541-773-6965 x101</a>
+                <a href="https://maps.google.com/?q=Medford"><p>Medford</p></a>
+            </div>
+            <div class="hidden" id="37">
+                <p>Currently housing 31 evacuees and have the capacity for 50 evacuees. Meals are being provided for evacuees at the shelter. If you need assistance please call</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>ROGUE RIVER</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '40')">
+                <div class="flex">
+                    <div>East Evans Creek Community Center</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 582-6006">(541) 582-6006</a>
+                <a href="https://maps.google.com/?q=8205 E Evans Creek Rd, Rogue River, OR 97530"><p>8205 E Evans Creek Rd, Rogue River, OR 97530</p></a>
+            </div>
+            <div class="hidden" id="40">
+                <p>Space for 50 people. Trailers, RVs, tents and indoor shelter available. Meals and toiletries are available. Call to confirm space</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '41')">
+                <div class="flex">
+                    <div>Grace Baptist Church</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 291-2714
+(Charlie Grenade)">(541) 291-2714
+(Charlie Grenade)</a>
+                <a href="https://maps.google.com/?q=4233 E Evans Creek Rd, Rogue River"><p>4233 E Evans Creek Rd, Rogue River</p></a>
+            </div>
+            <div class="hidden" id="41">
+                <p>Gymnasium open for shelter, parking available to campers (no hookups), pets kept in playground areas, access to showers, food, toiletries.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '42')">
+                <div class="flex">
+                    <div>Rogue River Assembly of God</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-582-0563">541-582-0563</a>
+                <a href="https://maps.google.com/?q=270 W Evans Creek Road, Rogue River"><p>270 W Evans Creek Road, Rogue River</p></a>
+            </div>
+            <div class="hidden" id="42">
+                <p>Large parking lot available for evacuees with RVs and trailers. Clothing closet, sundry items, food available.</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>WHITE CITY</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '45')">
+                <div class="flex">
+                    <div>Medford Drag Strip</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 290-3724
+">(541) 290-3724
+</a>
+                <a href="https://maps.google.com/?q=6900 Kershaw Rd, Central Point"><p>6900 Kershaw Rd, Central Point</p></a>
+            </div>
+            <div class="hidden" id="45">
+                <p>Space for RVs and vehicles</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '46')">
+                <div class="flex">
+                    <div>White City Samoan Seventh-Day Adventist Church</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:Pastor: Tala 541-227-3671 or Church Secretary: Sally 541-930-1007">Pastor: Tala 541-227-3671 or Church Secretary: Sally 541-930-1007</a>
+                <a href="https://maps.google.com/?q=3100 Antelope Rd, White City"><p>3100 Antelope Rd, White City</p></a>
+            </div>
+            <div class="hidden" id="46">
+                <p>Limited Space- Please call ahead; We have a hall that is available for shelter. We have a full kitchen, bathrooms and provide meals.  We also have a parking lot for vehicles. As of 9/15 they have space for about 3 more familes.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

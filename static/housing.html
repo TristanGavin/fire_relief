@@ -1,0 +1,419 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Almeda Fire Aid</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="../../handlebars-v4.7.6.js"></script>
+
+    <script>
+        function dropDown(c, i) {
+          var x = document.getElementById(i);
+          if (x.className === c) {
+            x.className += " responsive";
+          } else {
+            x.className = c;
+          }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="dropDown('topnav', 'myTopnav')">
+        <i class="fa fa-bars"></i></a>
+        <a href="../../index.html" class="active">Rouge Valley Fire Aid</a>
+        <a href="../../need.html">Need Help</a>
+        <a href="../../donate.html">Donate</a>
+        <a href="#news">Volunteer</a>
+        <a href="">Espanol</a>
+    </div>
+
+    <div class="back">
+        <a href="../../need.html"><i class="fas fa-arrow-left"></i></a>        
+        <div>List of Housing</div>
+    </div>
+
+    <!-- this will be templated -->
+    <div id="template">
+        <div class="back" id="">
+            <b></b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>AirBnB Housing Available for Free</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:https://www.airbnb.com/openhomes/disaster-relief/pacificnorthwestfires2020">https://www.airbnb.com/openhomes/disaster-relief/pacificnorthwestfires2020</a>
+                <a href="https://maps.google.com/?q=Across Oregon"><p>Across Oregon</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>Click on &quot;I need housing&quot; to complete the application. Or click on &quot;I want to offer housing&quot; to list your space.</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>APPLEGATE</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Brian Carvalho</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-218-3677">541-218-3677</a>
+                <a href="https://maps.google.com/?q=Applegate"><p>Applegate</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>Have place for small trailer or RV 28 ft have power and water.. no smokers.pet maybe.. i have dogs sheep and chickens</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Brian Carvalho</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-218-3677">541-218-3677</a>
+                <a href="https://maps.google.com/?q=Applegate"><p>Applegate</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>Spare furnished room.. no smokers no pets i have many already.. </p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Denise &amp; Kenneth Kalic</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-291-7804 or 541-326-6723">541-291-7804 or 541-326-6723</a>
+                <a href="https://maps.google.com/?q=Applegate area"><p>Applegate area</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>Short-term RV space available — we have an RV pad with full hook-ups. We are okay with pets: cats/dogs and will help fence the area around the RV as we have 2 large dogs and a cat that roam the property and it&#x27;s not fenced. We have space for an additional RV that provides water and power, no sewage. Limited WiFi. English/Spanish</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>ASHLAND</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Alli Newman</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:"></a>
+                <a href="https://maps.google.com/?q=Ashland Community Riverstone Commons (offer made on Facebook group, and the spreadsheet team is trying to collect more information to update this)"><p>Ashland Community Riverstone Commons (offer made on Facebook group, and the spreadsheet team is trying to collect more information to update this)</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>I have a room in my house. Id like to extend to to someone who has lost theirs. I’m looking for a good match. Not trying to leave anyone out. But I have a 9 month old and a teenager. So I’m thinking if there is someone with a baby, I am equipped, or maybe an elder who has no family.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Elizabeth Tobey</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:971-219-4784, elizabethparktobey@gmail.com">971-219-4784, elizabethparktobey@gmail.com</a>
+                <a href="https://maps.google.com/?q=South/East Ashland near Emigrant Lake"><p>South/East Ashland near Emigrant Lake</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>We run an airbnb from our guest room which is available for now (for approx 2 weeks). It&#x27;s a room with own entrance, attached bathroom, shower, laundry facilities, king bed, microwave, mini fridge, and air filter. Available short term. No pets. We also have camping available on our tiny farm.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Delaine Due</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-499-5214 text or call">541-499-5214 text or call</a>
+                <a href="https://maps.google.com/?q=Willow Street in Ashland between Otis and Orange."><p>Willow Street in Ashland between Otis and Orange.</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>Our house is open for anyone who wants a place to regroup, nap, shower, food, community. Room for several inside at a time while physically safe distances. Look for &quot;OPEN heart&quot; flag in front.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Gene Tresenfeld</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:971-219-4784, elizabethparktobey@gmail.com">971-219-4784, elizabethparktobey@gmail.com</a>
+                <a href="https://maps.google.com/?q=Ashland, S. Mountain, uphill from high school"><p>Ashland, S. Mountain, uphill from high school</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>Downstairs has a queen bed, its own bath &amp; WIFI. Unfortunately, my cat would not be happy with another pet.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Greg Panero</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:Elizabeth Tobey">Elizabeth Tobey</a>
+                <a href="https://maps.google.com/?q=Ashland"><p>Ashland</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>We have an extra room with 2 beds and plenty of room for tents. Community kitchen and multiple bathrooms for support. Please don&#x27;t hesitate to call.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Jasmyne Chandler</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-531-6425, text preferred">541-531-6425, text preferred</a>
+                <a href="https://maps.google.com/?q=Cove road off of Indian Memorial"><p>Cove road off of Indian Memorial</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>We live on 10 acres and can offer camping or RV space as well as space for pets and chickens. Our land is not fenced (except for chicken yard), so it would need to be pets that don&#x27;t wander, are good with kids and other dogs, and won&#x27;t kill chickens.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Jeanine Moy</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:914 830 1950">914 830 1950</a>
+                <a href="https://maps.google.com/?q=Vesper Meadow - 16534 D. Indian Memorial Rd"><p>Vesper Meadow - 16534 D. Indian Memorial Rd</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>Primitive camping available in 12&#x27; X 16&#x27; tent or bring your own, Camper/ RV space available but no hook-ups. Bathroom not available, but potable water</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Jordan Stewart</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:509-521-4321">509-521-4321</a>
+                <a href="https://maps.google.com/?q=N. Ashland"><p>N. Ashland</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>Nothing luxurious, but I have 2 couches available in my living room.  There is a lot of fridge space for food.  I am barding one person right now.  Dogs roam, so allergies to dogs should be considered.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Ila</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:415-900-8946">415-900-8946</a>
+                <a href="https://maps.google.com/?q=Quiet village- I can offer a place to sleep or a mattress to borrow, text if needed 💕"><p>Quiet village- I can offer a place to sleep or a mattress to borrow, text if needed 💕</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>Offering mattress in van and/or in living room of home. Not good for people with pet allergies </p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Lauri McKean</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:509-690-7977">509-690-7977</a>
+                <a href="https://maps.google.com/?q=Ashland"><p>Ashland</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>Spare room with futon bed for single female or couple.  Share the bathroom and kitchen.  Caveat: I have chemical sensitivities so hygiene and laundry products used need to be natural or unscented.   </p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Mary Ann and David</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:"></a>
+                <a href="https://maps.google.com/?q=south Ashland"><p>south Ashland</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>spare room with comfortable floor mats for 1-2 people, all welcome, un cuarto para 1-2 personas
+2 steps up to the door, 2 steps down to use restroom</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Mihir Rajput</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:Ashland/4046671729">Ashland/4046671729</a>
+                <a href="https://maps.google.com/?q=south Ashland"><p>south Ashland</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>place to sleep/cook/freshen up</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Neil Nicholson, Laura Marinelli</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:call 541-488-6267 or text 541-301-3559 or 541-324-1450">call 541-488-6267 or text 541-301-3559 or 541-324-1450</a>
+                <a href="https://maps.google.com/?q=cove road off dead indian memorial"><p>cove road off dead indian memorial</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>we have space for camping and some small animals.  most of proprty not securely fenced.  we have some camping supplies such as tents and sleeping bags we can part with. please feel free to ask, we have alot of extra gear.  there are currently four dogs, three cats, chickens and ducks (securely fenced) on the property.  </p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Jeff Wyatt</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-248-4970">541-248-4970</a>
+                <a href="https://maps.google.com/?q=Ashland above Lithia Park, 12 minute walk to the Plaza"><p>Ashland above Lithia Park, 12 minute walk to the Plaza</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>Studio apartment with bath, kitchenette, queen bed and small sleeper sofa</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Sonya Smith</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:Lecirqueashland@gmail.com">Lecirqueashland@gmail.com</a>
+                <a href="https://maps.google.com/?q=Maple way, ashland"><p>Maple way, ashland</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>We have spare rooms, bed and blow up bed, can take indoor animals (outdoor space is accessible but not secure).</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>BANDON</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Mr.Pickles</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:808-250-7507">808-250-7507</a>
+                <a href="https://maps.google.com/?q=Bandon"><p>Bandon</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>I can house a couple or single parent and child (queen bunk futon), run of the house, washer and dryer, 2 cats. You&#x27;ll need a car.</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>BEND</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Bill Martin</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-203-0016">541-203-0016</a>
+                <a href="https://maps.google.com/?q=22540 Rickard Rd, Bend"><p>22540 Rickard Rd, Bend</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>Horse property in Bend with room for 30 horses and parking for trailers, etc. </p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>CENTRAL POINT</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Tess Siemer</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:530-513-2896">530-513-2896</a>
+                <a href="https://maps.google.com/?q=Central Point"><p>Central Point</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>Tenemos espacio en la casa - un cuarto privado y también un sofá del tamaño Queen. Tengo una yarda grande para deacansar o para que los niños juegan.</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>GOLD HILL</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Lynn and Dan Kellogg</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-855-9638. 541-531-0557 (Lynn). 541-601-6512 ( Dan)">541-855-9638. 541-531-0557 (Lynn). 541-601-6512 ( Dan)</a>
+                <a href="https://maps.google.com/?q=Gold Hill"><p>Gold Hill</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>We have a community building 2 miles up Sardine Creek Road outside of Gold Hill. It used to be a restaurant. There is a working stove and refrigerator and 2 bathrooms. There is also a large room. I think 8 people could live there comfortably if they were an extended family or good friends. There is not a lot of privacy. Whoever lives there would need transportation and we would like them to be non smokers. Unfortunately cell service is very spotty in this area but we can easily get the landline hooked back up.</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>PORTLAND</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Marissa Wolf</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:marissa@pcs.org">marissa@pcs.org</a>
+                <a href="https://maps.google.com/?q=Portland, OR"><p>Portland, OR</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>3 bedroom house available (with our kitty!) while we&#x27;re traveling Oct 2 - Oct 30</p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>TALENT</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Spanish Speaker with Spare Room </div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-415-2811">541-415-2811</a>
+                <a href="https://maps.google.com/?q=Talent, OR"><p>Talent, OR</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>Spare room with single bed and pullout couches available. Spanish speaking families welcome! Room for up to four. Most comfortable with single mother and children, but please reach out if in need. Has dogs and cats. </p>
+            </div>
+        </div>
+        <div class="back" id="">
+            <b>Sharon Cleek</b>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '')">
+                <div class="flex">
+                    <div>Jeffri and Shayna</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:Jeffri - 360-269-7405 or Shayna - 541-951-1513">Jeffri - 360-269-7405 or Shayna - 541-951-1513</a>
+                <a href="https://maps.google.com/?q=Various"><p>Various</p></a>
+            </div>
+            <div class="hidden" id="">
+                <p>Call to apply for temporary shelter.</p>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+
+</html>

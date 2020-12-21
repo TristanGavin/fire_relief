@@ -1,0 +1,362 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Almeda Fire Aid</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="../../handlebars-v4.7.6.js"></script>
+
+    <script>
+        function dropDown(c, i) {
+          var x = document.getElementById(i);
+          if (x.className === c) {
+            x.className += " responsive";
+          } else {
+            x.className = c;
+          }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="dropDown('topnav', 'myTopnav')">
+        <i class="fa fa-bars"></i></a>
+        <a href="../../index.html" class="active">Rouge Valley Fire Aid</a>
+        <a href="../../need.html">Need Help</a>
+        <a href="../../donate.html">Donate</a>
+        <a href="#news">Volunteer</a>
+        <a href="">Espanol</a>
+    </div>
+
+    <div class="back">
+        <a href="../../need.html"><i class="fas fa-arrow-left"></i></a>
+        <div>Emotional and Spiritual Resources</div>
+    </div>
+
+    <!-- this will be templated -->
+    <div id="template">
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '0')">
+                <div class="flex">
+                    <div>Oregon Behavioral Health Support Line</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:1-800-923-HELP (4357)">1-800-923-HELP (4357)</a>
+                <a href="https://maps.google.com/?q=A free and confidential resource for all Oregonians who are looking for emotional support. You do not need to be in a mental health crisis to call this line. If you need or want help beyond what the line can provide, you will be connected to those services. This can include community-based services such as housing, food assistance or clinical services. Certified interpreters are also available for those who speak a language other than English. Through this number, you can also connect with Lines for Life (linesforlife.org), a suicide prevention organization with specific resources for youth, military personnel and their families, and those affected by substance abuse problems."><p>A free and confidential resource for all Oregonians who are looking for emotional support. You do not need to be in a mental health crisis to call this line. If you need or want help beyond what the line can provide, you will be connected to those services. This can include community-based services such as housing, food assistance or clinical services. Certified interpreters are also available for those who speak a language other than English. Through this number, you can also connect with Lines for Life (linesforlife.org), a suicide prevention organization with specific resources for youth, military personnel and their families, and those affected by substance abuse problems.</p></a>
+            </div>
+            <div class="hidden" id="0">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '1')">
+                <div class="flex">
+                    <div>Alcoholics Anonymous </div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:24 hour hotline 541-732-1850">24 hour hotline 541-732-1850</a>
+                <a href="https://maps.google.com/?q=https://medfordareaaa.org/meetings/ - in person and phone and videoconferencing meetings available - 100% free"><p>https://medfordareaaa.org/meetings/ - in person and phone and videoconferencing meetings available - 100% free</p></a>
+            </div>
+            <div class="hidden" id="1">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '2')">
+                <div class="flex">
+                    <div>Father Scott Carter</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:founder@pilgrimchapelofcontemplativeconscience.org">founder@pilgrimchapelofcontemplativeconscience.org</a>
+                <a href="https://maps.google.com/?q=Spiritual Listening, Support, Advice; Sacraments, including Communion; Recorded Online Blessings at (541) 708-1428. I am a resident of Ashland and an ordained Independent Catholic priest (not Roman Catholic). Additional information is available at https://www.facebook.com/ScottAllanCarter/ and https://www.facebook.com/PilgrimChapelOfContemplativeConscience ."><p>Spiritual Listening, Support, Advice; Sacraments, including Communion; Recorded Online Blessings at (541) 708-1428. I am a resident of Ashland and an ordained Independent Catholic priest (not Roman Catholic). Additional information is available at https://www.facebook.com/ScottAllanCarter/ and https://www.facebook.com/PilgrimChapelOfContemplativeConscience .</p></a>
+            </div>
+            <div class="hidden" id="2">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '3')">
+                <div class="flex">
+                    <div>Delaine Due, M.A., ATR-BC, LAT (licensed art therapist)</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-499-5214">541-499-5214</a>
+                <a href="https://maps.google.com/?q=Art supplies and professional support available at my home. Also food, space to nap, shower. I&#x27;m a licensed art therapist."><p>Art supplies and professional support available at my home. Also food, space to nap, shower. I&#x27;m a licensed art therapist.</p></a>
+            </div>
+            <div class="hidden" id="3">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '4')">
+                <div class="flex">
+                    <div>Support Group for Children/Teens/Young Adults</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:analyssacamacho@gmail.com">analyssacamacho@gmail.com</a>
+                <a href="https://maps.google.com/?q=If there are any kids or teens who are struggling with everything going on, I would love to help start a support group of a sort so they don&#x27;t feel alone, perhaps help them grieve, make peace, or understand what is happening. I am a 21yr old female student at SOU, I have 8 years experience in childcare and 3 years experience in child education working as a class aid/tutor/teacher. Would still implement social distancing. Can meet at my house, the park, or anywhere (I also have a car)."><p>If there are any kids or teens who are struggling with everything going on, I would love to help start a support group of a sort so they don&#x27;t feel alone, perhaps help them grieve, make peace, or understand what is happening. I am a 21yr old female student at SOU, I have 8 years experience in childcare and 3 years experience in child education working as a class aid/tutor/teacher. Would still implement social distancing. Can meet at my house, the park, or anywhere (I also have a car).</p></a>
+            </div>
+            <div class="hidden" id="4">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '5')">
+                <div class="flex">
+                    <div>Christina Begley, MA, PCC</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:510-387-6174, cb@christinabegley.com">510-387-6174, cb@christinabegley.com</a>
+                <a href="https://maps.google.com/?q=No-cost stress management coaching and support, problem-solving, developing a plan, identifying resources/support, just listening. www.christinabegley.com "><p>No-cost stress management coaching and support, problem-solving, developing a plan, identifying resources/support, just listening. www.christinabegley.com </p></a>
+            </div>
+            <div class="hidden" id="5">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '6')">
+                <div class="flex">
+                    <div>Cynthia Boersma</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-708-1112, cynthia@cynthiaboersmapsychotherapy.net">541-708-1112, cynthia@cynthiaboersmapsychotherapy.net</a>
+                <a href="https://maps.google.com/?q=Child therapy and adult therapy.  In person sessions and teletherapy available.  No cost &amp; sliding scale for those affected by fire. Ashland location. "><p>Child therapy and adult therapy.  In person sessions and teletherapy available.  No cost &amp; sliding scale for those affected by fire. Ashland location. </p></a>
+            </div>
+            <div class="hidden" id="6">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '7')">
+                <div class="flex">
+                    <div>Alaya Ketani CHT CFT CPC</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541.292.2945, empoweringhypnotherapy@gmail.com">541.292.2945, empoweringhypnotherapy@gmail.com</a>
+                <a href="https://maps.google.com/?q=Free sessions for those who have lost their homes due to the fires.  Special Sliding Scale for others impacted by the fires. Depth Hypnotherapy, Neuroscience, Nervous System Regulation, Sensorimotor Crisis and Trauma Interventions, Brain Spotting.  Clarity.  Challenged Pregnancies. Career Social Worker - Resource Referral.  Women&#x27;s Empowerment, And Much More.  www.empoweringhypnotherapy.com  Also Founder/Executive Director of Keeping Ashland Women Safe, 501c3 Nonprofit.    www.empoweringhypnotherapy.com"><p>Free sessions for those who have lost their homes due to the fires.  Special Sliding Scale for others impacted by the fires. Depth Hypnotherapy, Neuroscience, Nervous System Regulation, Sensorimotor Crisis and Trauma Interventions, Brain Spotting.  Clarity.  Challenged Pregnancies. Career Social Worker - Resource Referral.  Women&#x27;s Empowerment, And Much More.  www.empoweringhypnotherapy.com  Also Founder/Executive Director of Keeping Ashland Women Safe, 501c3 Nonprofit.    www.empoweringhypnotherapy.com</p></a>
+            </div>
+            <div class="hidden" id="7">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '8')">
+                <div class="flex">
+                    <div>Erin Dozhier, BA, QMHA</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(541) 450-9297‬">(541) 450-9297‬</a>
+                <a href="https://maps.google.com/?q=No-cost tarot reading and pagan spiritual services. Offering blessings, prayer rituals, and altar space for those unable to continue their spiritual practices due to loss of home and hearth. I am a Hellenic pagan and work primarily with the harvest and chthonic deities. "><p>No-cost tarot reading and pagan spiritual services. Offering blessings, prayer rituals, and altar space for those unable to continue their spiritual practices due to loss of home and hearth. I am a Hellenic pagan and work primarily with the harvest and chthonic deities. </p></a>
+            </div>
+            <div class="hidden" id="8">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '9')">
+                <div class="flex">
+                    <div>Lauri McKean, LAc</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:509-690-7977; lauri@jademountainmedicine.com">509-690-7977; lauri@jademountainmedicine.com</a>
+                <a href="https://maps.google.com/?q=Free acupuncture sessions to those who have lost their homes due to the fires.  I also have some free essential oils and chinese herbal pills that are helpful for dealing with stress, smoke (sinus and asthma), insomnia, etc. "><p>Free acupuncture sessions to those who have lost their homes due to the fires.  I also have some free essential oils and chinese herbal pills that are helpful for dealing with stress, smoke (sinus and asthma), insomnia, etc. </p></a>
+            </div>
+            <div class="hidden" id="9">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '10')">
+                <div class="flex">
+                    <div>La Clinica West Medford </div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-535-6239">541-535-6239</a>
+                <a href="https://maps.google.com/?q=1307 W Main St, Medford, OR 97501                                                                Providing mental health and medical support to anyone in need. "><p>1307 W Main St, Medford, OR 97501                                                                Providing mental health and medical support to anyone in need. </p></a>
+            </div>
+            <div class="hidden" id="10">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '11')">
+                <div class="flex">
+                    <div>Jackson County Crisis Number </div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541.774.8201">541.774.8201</a>
+                <a href="https://maps.google.com/?q=Crisis Line is open 24 hours a day 7 days a week. "><p>Crisis Line is open 24 hours a day 7 days a week. </p></a>
+            </div>
+            <div class="hidden" id="11">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '12')">
+                <div class="flex">
+                    <div>Rogue Valley Mentoring</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-708-6688">541-708-6688</a>
+                <a href="https://maps.google.com/?q=Adult volunteer mentors ready to serve youth (1-1 or in small groups), could meet at Expo (we usually mentor in the Phoenix-Talent, Medford &amp; CP school districts)"><p>Adult volunteer mentors ready to serve youth (1-1 or in small groups), could meet at Expo (we usually mentor in the Phoenix-Talent, Medford &amp; CP school districts)</p></a>
+            </div>
+            <div class="hidden" id="12">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '13')">
+                <div class="flex">
+                    <div>www.HarvestingHealth.com </div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:Stress Reducation Counseling - Marilyn Lindsay, M.Ed. NC  415-279-9750">Stress Reducation Counseling - Marilyn Lindsay, M.Ed. NC  415-279-9750</a>
+                <a href="https://maps.google.com/?q=Available to work with individuals and groups to teach simple techniques for calming the nervous system to acheive better health, decision-making, peace of mind"><p>Available to work with individuals and groups to teach simple techniques for calming the nervous system to acheive better health, decision-making, peace of mind</p></a>
+            </div>
+            <div class="hidden" id="13">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '14')">
+                <div class="flex">
+                    <div>Emotional Support Suggestions for Wildfires (Adults and Children)</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:"></a>
+                <a href="https://maps.google.com/?q=Google document with tips from various professionals"><p>Google document with tips from various professionals</p></a>
+            </div>
+            <div class="hidden" id="14">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '15')">
+                <div class="flex">
+                    <div>Community Grieving Circles</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:5414505336">5414505336</a>
+                <a href="https://maps.google.com/?q=Currently being held every evening at 7pm on Zoom by Crossroads Community DeathCare, Michael and Angela Franklin. Follow @Crossroads Community DeathCare for updates. &quot;During these circles we will hold space for and with each other to speak our grief and sorrows. We will come together, via Zoom, in non-judgement and respect as we uniquely and authentically honor loss in its many shapes and forms.&quot;"><p>Currently being held every evening at 7pm on Zoom by Crossroads Community DeathCare, Michael and Angela Franklin. Follow @Crossroads Community DeathCare for updates. &quot;During these circles we will hold space for and with each other to speak our grief and sorrows. We will come together, via Zoom, in non-judgement and respect as we uniquely and authentically honor loss in its many shapes and forms.&quot;</p></a>
+            </div>
+            <div class="hidden" id="15">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '16')">
+                <div class="flex">
+                    <div>DIY Papercuts 
+Caroline Larrieu Casias, MSW</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:diypapercuts@gmail.com">diypapercuts@gmail.com</a>
+                <a href="https://maps.google.com/?q=Art and Wellness Self Care Kits - I have a background in Mental Health and Art Therapy, and am creating guided journaling and art activities to support folks as they process Loss and Trauma. Email me for FREE guided journaling. "><p>Art and Wellness Self Care Kits - I have a background in Mental Health and Art Therapy, and am creating guided journaling and art activities to support folks as they process Loss and Trauma. Email me for FREE guided journaling. </p></a>
+            </div>
+            <div class="hidden" id="16">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '17')">
+                <div class="flex">
+                    <div>Joanne</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-899-1287 ">541-899-1287 </a>
+                <a href="https://maps.google.com/?q=Call Joanne for Trauma Counceling available by appointment -  Jacksonville Presbyterian Church - 425 Middle St., Jacksonville"><p>Call Joanne for Trauma Counceling available by appointment -  Jacksonville Presbyterian Church - 425 Middle St., Jacksonville</p></a>
+            </div>
+            <div class="hidden" id="17">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '18')">
+                <div class="flex">
+                    <div>Jade Mountain Medicine Clinic in Ashland - various acupuncturists</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-482-2107.  By appointment only.  Ongoing throughout the day on Fridays.">541-482-2107.  By appointment only.  Ongoing throughout the day on Fridays.</a>
+                <a href="https://maps.google.com/?q=Free Individual Acupuncture Treatments for Those Who Lost Their Homes in the Fire.  These are very helpful for promoting relaxation, calm, focus and better sleep.  "><p>Free Individual Acupuncture Treatments for Those Who Lost Their Homes in the Fire.  These are very helpful for promoting relaxation, calm, focus and better sleep.  </p></a>
+            </div>
+            <div class="hidden" id="18">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '19')">
+                <div class="flex">
+                    <div>Various Acupuncturists - People&#x27;s Choice Acupuncture Clinic.  1640 Siskiyou Blvd Suite C, Ashland. </div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:Saturday, Sept 19th from 8am to 5pm. - Walk-in  Call 509-690-7977 for info.  No appointment necessary.">Saturday, Sept 19th from 8am to 5pm. - Walk-in  Call 509-690-7977 for info.  No appointment necessary.</a>
+                <a href="https://maps.google.com/?q=Free Acupuncture treatments in a large group room.  For those who have been affected by the fires.  Please wear a mask and loose, comfortable clothing.  Great for promoting relaxation, calm, focus and sleep."><p>Free Acupuncture treatments in a large group room.  For those who have been affected by the fires.  Please wear a mask and loose, comfortable clothing.  Great for promoting relaxation, calm, focus and sleep.</p></a>
+            </div>
+            <div class="hidden" id="19">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '20')">
+                <div class="flex">
+                    <div>The Almeda Fire in Jackson County</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:https://www.facebook.com/crisisresponse/779702329456725?alias&#x3D;779702329456725&amp;latitude&#x3D;47.60644745522113&amp;longitude&#x3D;-122.30423155995105&amp;source&#x3D;search">https://www.facebook.com/crisisresponse/779702329456725?alias&#x3D;779702329456725&amp;latitude&#x3D;47.60644745522113&amp;longitude&#x3D;-122.30423155995105&amp;source&#x3D;search</a>
+                <a href="https://maps.google.com/?q=Information, solidarity"><p>Information, solidarity</p></a>
+            </div>
+            <div class="hidden" id="20">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '21')">
+                <div class="flex">
+                    <div>Medford Area Citizen Cares</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:https://www.facebook.com/groups/370307553973996">https://www.facebook.com/groups/370307553973996</a>
+                <a href="https://maps.google.com/?q=group asking people to offer what they have and request what they need. It’s basically a group that is open to all people and is providing a logistical way for people to get in touch with each other."><p>group asking people to offer what they have and request what they need. It’s basically a group that is open to all people and is providing a logistical way for people to get in touch with each other.</p></a>
+            </div>
+            <div class="hidden" id="21">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '22')">
+                <div class="flex">
+                    <div>Rogue Valley Emotional Wellness Hotline </div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:https://www.medford.k12.or.us/site/default.aspx?PageType&#x3D;3&amp;DomainID&#x3D;4&amp;ModuleInstanceID&#x3D;5359&amp;ViewID&#x3D;6446EE88-D30C-497E-9316-3F8874B3E108&amp;RenderLoc&#x3D;0&amp;FlexDataID&#x3D;18045&amp;PageID&#x3D;1&amp;Comments&#x3D;true">https://www.medford.k12.or.us/site/default.aspx?PageType&#x3D;3&amp;DomainID&#x3D;4&amp;ModuleInstanceID&#x3D;5359&amp;ViewID&#x3D;6446EE88-D30C-497E-9316-3F8874B3E108&amp;RenderLoc&#x3D;0&amp;FlexDataID&#x3D;18045&amp;PageID&#x3D;1&amp;Comments&#x3D;true</a>
+                <a href="https://maps.google.com/?q=Hotline for ANYONE in the Southern Oregon area experiencing grief and loss associated with the recent fires"><p>Hotline for ANYONE in the Southern Oregon area experiencing grief and loss associated with the recent fires</p></a>
+            </div>
+            <div class="hidden" id="22">
+                <p></p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '23')">
+                <div class="flex">
+                    <div>Dra. Laura Calderón de la Barca, Psicoterapeuta Intuitiva Integral</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:info@terapiaparamexico.com">info@terapiaparamexico.com</a>
+                <a href="https://maps.google.com/?q=Apoyo emocional grupal por temas de trauma individual y colectivo para quienes sufrieron pérdidas por los incendios en Jackson County, gratuitos, por internet."><p>Apoyo emocional grupal por temas de trauma individual y colectivo para quienes sufrieron pérdidas por los incendios en Jackson County, gratuitos, por internet.</p></a>
+            </div>
+            <div class="hidden" id="23">
+                <p></p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>

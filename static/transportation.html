@@ -1,0 +1,323 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Almeda Fire Aid</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="../../handlebars-v4.7.6.js"></script>
+
+    <script>
+        function dropDown(c, i) {
+          var x = document.getElementById(i);
+          if (x.className === c) {
+            x.className += " responsive";
+          } else {
+            x.className = c;
+          }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="dropDown('topnav', 'myTopnav')">
+        <i class="fa fa-bars"></i></a>
+        <a href="../../index.html" class="active">Rouge Valley Fire Aid</a>
+        <a href="../../need.html">Need Help</a>
+        <a href="../../donate.html">Donate</a>
+        <a href="#news">Volunteer</a>
+        <a href="">Espanol</a>
+    </div>
+
+    <div class="back">
+        <a href="../../need.html"><i class="fas fa-arrow-left"></i></a>
+        <div>Transportation Resources</div>
+    </div>
+
+    <!-- this will be templated -->
+    <div id="template">
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '0')">
+                <div class="flex">
+                    <div>Aiyana Green</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:5418404284">5418404284</a>
+                <a href="https://maps.google.com/?q=SE of Ashland"><p>SE of Ashland</p></a>
+            </div>
+            <div class="hidden" id="0">
+                <p>We have a pickup and a mostly enclosed 2 horse trailer for animal transport. Could also transport belongings if needed. We live close to the Greensprings.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '1')">
+                <div class="flex">
+                    <div>Central Point shuttle</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:"></a>
+                <a href="https://maps.google.com/?q="><p></p></a>
+            </div>
+            <div class="hidden" id="1">
+                <p>Runs between the Expo and Central Point Albertson&#x27;s/Goodwill on Freeman Rd. The Route 40 serves this shopping center. Anyone wanting to get to the Expo should get off the Route 40 at the stop on Freeman Rd. and walk to the Goodwill to wait in front for the shuttle.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '2')">
+                <div class="flex">
+                    <div>Greg Panero</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:925-708-9278">925-708-9278</a>
+                <a href="https://maps.google.com/?q=Ashland"><p>Ashland</p></a>
+            </div>
+            <div class="hidden" id="2">
+                <p>We are available to transport people, small animals, and/or supplies anywhere in The Valley. Also we have tools for and emergency or quick repairs needed. Please call with any and all needs.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '3')">
+                <div class="flex">
+                    <div>Rogue Valley Transportation District </div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:"></a>
+                <a href="https://maps.google.com/?q="><p></p></a>
+            </div>
+            <div class="hidden" id="3">
+                <p>Emergency service between Medford and Ashland</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '4')">
+                <div class="flex">
+                    <div>Rogue Valley Transportation District </div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:"></a>
+                <a href="https://maps.google.com/?q="><p></p></a>
+            </div>
+            <div class="hidden" id="4">
+                <p>RVTD is providing a limited shuttle service only between the Expo and the Goodwill/Albertson&#x27;s shopping center on Freeman Rd. It leaves every 30 minutes and we currently have it operating mornings and afternoons. (The regular Route 40 also serves the Goodwill/Albertson&#x27;s shopping center and people can make transfers to our larger system at this location.)</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '5')">
+                <div class="flex">
+                    <div>Phoenix/Talent Schools</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:"></a>
+                <a href="https://maps.google.com/?q="><p></p></a>
+            </div>
+            <div class="hidden" id="5">
+                <p>Phoenix Talent Schools are using school buses to take their families in need of shelter to the EXPO.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '6')">
+                <div class="flex">
+                    <div>Luca Day</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:860-550-2938">860-550-2938</a>
+                <a href="https://maps.google.com/?q=Medford"><p>Medford</p></a>
+            </div>
+            <div class="hidden" id="6">
+                <p>Have 1 car &amp; 1 SUV. Available to transport people &amp; their items. Safe transportation for LGBTQ+ &amp; PoC. Available most days 10a-4/5p</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '7')">
+                <div class="flex">
+                    <div>Jack Hager</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-429-2677">541-429-2677</a>
+                <a href="https://maps.google.com/?q=Medford"><p>Medford</p></a>
+            </div>
+            <div class="hidden" id="7">
+                <p>2 drivers available to pick up and deliver people, food, or other supplies in two small cars. Happy to help run your errands!</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '8')">
+                <div class="flex">
+                    <div>Nicole Ferer</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:650-339-3715">650-339-3715</a>
+                <a href="https://maps.google.com/?q=N Ashland"><p>N Ashland</p></a>
+            </div>
+            <div class="hidden" id="8">
+                <p>2 drivers available to transport people, animals, and supplies anywhere in the valley. Please call with any and all needs. Safe for LGBTQ+ and PoC</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '9')">
+                <div class="flex">
+                    <div>Jordan Stewart</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:509-521-4321">509-521-4321</a>
+                <a href="https://maps.google.com/?q=N. Ashland"><p>N. Ashland</p></a>
+            </div>
+            <div class="hidden" id="9">
+                <p>1 Truck with canopy and a utility trailer option for transporting needs</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '10')">
+                <div class="flex">
+                    <div>Sean &amp; Kathryn </div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-973-4303">541-973-4303</a>
+                <a href="https://maps.google.com/?q=SE Medford"><p>SE Medford</p></a>
+            </div>
+            <div class="hidden" id="10">
+                <p>2 drivers available to run errands, pick up food etc. We have a small car and a pickup truck. Safe for LGBTQ+ and PoC.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '11')">
+                <div class="flex">
+                    <div>Jason Plotts</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-951-0293">541-951-0293</a>
+                <a href="https://maps.google.com/?q=N. Ashland"><p>N. Ashland</p></a>
+            </div>
+            <div class="hidden" id="11">
+                <p>Spare vehicle to loan for family in need</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '12')">
+                <div class="flex">
+                    <div>Stasie Maxwell</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-631-9097">541-631-9097</a>
+                <a href="https://maps.google.com/?q=S. Ashland"><p>S. Ashland</p></a>
+            </div>
+            <div class="hidden" id="12">
+                <p>1 Driver, Honda Element, able to transport people, small animals or supplies</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '13')">
+                <div class="flex">
+                    <div>Doug Cochran</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-488-0138">541-488-0138</a>
+                <a href="https://maps.google.com/?q=S. Ashland"><p>S. Ashland</p></a>
+            </div>
+            <div class="hidden" id="13">
+                <p>I have a truck and CR-V and am available to transport people, pets and supplies.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '14')">
+                <div class="flex">
+                    <div>Evan Corrales</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:(619) 818-0717">(619) 818-0717</a>
+                <a href="https://maps.google.com/?q=S Medford"><p>S Medford</p></a>
+            </div>
+            <div class="hidden" id="14">
+                <p>I have a truck, can transport people, supplies, pets, etc</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '15')">
+                <div class="flex">
+                    <div>South Gateway Medford shuttle</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:"></a>
+                <a href="https://maps.google.com/?q="><p></p></a>
+            </div>
+            <div class="hidden" id="15">
+                <p>runs between the Expo and the S.Gateway Walmart and also the S. Medford Goodwill. The S. Walmart is served by the 1X and the S. Medford Goodwill is served by the Route 24. Anyone wanting to get to the Expo needs to wait in front of either store.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '16')">
+                <div class="flex">
+                    <div>Matt Seiler</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:209-769-3470 (text if I don&#x27;t answer)">209-769-3470 (text if I don&#x27;t answer)</a>
+                <a href="https://maps.google.com/?q=Phoenix"><p>Phoenix</p></a>
+            </div>
+            <div class="hidden" id="16">
+                <p>We have a small utility trailer and can haul your stuff locally. Safe for everyone.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '17')">
+                <div class="flex">
+                    <div>Marisa Stone</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541-631-9992">541-631-9992</a>
+                <a href="https://maps.google.com/?q=E. Medford"><p>E. Medford</p></a>
+            </div>
+            <div class="hidden" id="17">
+                <p>I have an SUV and can transport people  and supplies</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '18')">
+                <div class="flex">
+                    <div>Elizabeth Tobey</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:971.219.4784, elizabethparktobey@gmail.com">971.219.4784, elizabethparktobey@gmail.com</a>
+                <a href="https://maps.google.com/?q=South/East Ashland, near Emigrant"><p>South/East Ashland, near Emigrant</p></a>
+            </div>
+            <div class="hidden" id="18">
+                <p>Have a pickup truck available to loan out to people for moving materials. Stick shift. Older Toyota.</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '19')">
+                <div class="flex">
+                    <div>mark stella</div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:541 535 5880">541 535 5880</a>
+                <a href="https://maps.google.com/?q=talent"><p>talent</p></a>
+            </div>
+            <div class="hidden" id="19">
+                <p>8 x 12 open flatbed</p>
+            </div>
+        </div>
+        <div class="resource-card">
+            <div class="shown" onclick="dropDown('hidden', '20')">
+                <div class="flex">
+                    <div></div>
+                    <i>down</i>
+                </div>
+                <a class="phone" href="tel:"></a>
+                <a href="https://maps.google.com/?q="><p></p></a>
+            </div>
+            <div class="hidden" id="20">
+                <p>8 x 14 curtain van/box truck</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
